@@ -14,11 +14,15 @@ Algorithm: Sliding Window Protocol – Client Side
 8. Read the window size (W).
 9. Initialize starting index i = 0.
 10. Repeat until all frames are sent:
+
      •Send W frames starting from index i.
      •Wait for acknowledgment from the server.
+     
 11. If acknowledgment is received:
+
      •Move the window forward by W frames. 
      •Stop after all frames are transmitted.
+
 12. End
 
 Algorithm: Sliding Window Protocol – Server Side
@@ -27,9 +31,11 @@ Algorithm: Sliding Window Protocol – Server Side
 2. Create a socket using TCP.
 3. Connect to the client using localhost and port 8002.
 4. Repeat:
+
    •Receive a frame window from the client.
    •Display the received frames.
    •Send acknowledgment back to the client.
+
 5. Continue until transmission ends.
 6. Close the connection.
 7. End
