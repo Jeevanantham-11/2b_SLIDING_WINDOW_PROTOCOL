@@ -3,6 +3,7 @@
 To implement a program to illustrate the mechanism of sliding window protocol
 ## ALGORITHM:
 Algorithm: Sliding Window Protocol – Client Side
+
 1. Start
 2. Create a socket using TCP.
 3. Bind the socket to localhost and port 8002.
@@ -26,13 +27,9 @@ Algorithm: Sliding Window Protocol – Server Side
 2. Create a socket using TCP.
 3. Connect to the client using localhost and port 8002.
 4. Repeat:
-
    •Receive a frame window from the client.
-
    •Display the received frames.
-
    •Send acknowledgment back to the client.
-
 5. Continue until transmission ends.
 6. Close the connection.
 7. End
