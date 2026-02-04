@@ -2,7 +2,7 @@
 ## AIM
 To implement a program to illustrate the mechanism of sliding window protocol
 ## ALGORITHM:
-Algorithm: Sliding Window Protocol – Client Side
+## Algorithm: Sliding Window Protocol – Client Side
 
 1. Start
 2. Create a socket using TCP.
@@ -16,16 +16,18 @@ Algorithm: Sliding Window Protocol – Client Side
 10. Repeat until all frames are sent:
 
      •Send W frames starting from index i.
+
      •Wait for acknowledgment from the server.
-     
+
 11. If acknowledgment is received:
 
      •Move the window forward by W frames. 
+
      •Stop after all frames are transmitted.
 
 12. End
 
-Algorithm: Sliding Window Protocol – Server Side
+## Algorithm: Sliding Window Protocol – Server Side
 
 1. Start
 2. Create a socket using TCP.
@@ -33,7 +35,9 @@ Algorithm: Sliding Window Protocol – Server Side
 4. Repeat:
 
    •Receive a frame window from the client.
+
    •Display the received frames.
+
    •Send acknowledgment back to the client.
 
 5. Continue until transmission ends.
